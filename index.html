@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="js/script.js"></script>
+
+
+
+</head>
+
+<body>
+
+  <style>
+    body {
+      background-image: url('img/background.jpg');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+  </style>
+
+  <label for="StaffID" id="lblStaff">Staff Password Validator</label>
+
+  <input type="text" id="StaffID" placeholder="Staff ID"><br>
+
+  <label id="inValid" style="color: red; visibility: hidden;">Invalid Staff ID</label><br>
+
+  <label id="Valid" style="color:green; visibility: hidden;">Valid Staff ID</label><br>
+
+  <button onclick="validate()" type="button" id="getText">Submit</button>
+
+  <button class="btn btn-info mr-4" id="getRandom">Get Random Users</button>
+  <div id="output"></div>
+
+
+
+
+</body>
+
+</html>

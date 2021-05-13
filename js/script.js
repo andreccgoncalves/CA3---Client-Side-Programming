@@ -59,7 +59,7 @@ var total_items = 3;
 
     function CalculateStartersValue() {
 
-        var total = 0;
+        let total = 0;
 
         for (let i = 1; i <= 3; i++) {
             itemID = document.getElementById("qnt_" + i);
@@ -76,14 +76,14 @@ var total_items = 3;
 
     //Main value
 
-    var total_items = 3;
+    
 
     function CalculateMainValue() {
+        let total = 0;
+       
 
-        var total = 0;
-
-        for (let i = 1; i <= 3; i++) {
-            itemID = document.getElementById("qnt_" + i);
+        for (let i = 4; i <= 6 ;i++) {
+            itemID = document.getElementById("qnt_"  + i);
             total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")))
 
         }
@@ -97,18 +97,18 @@ var total_items = 3;
 
     //Dessert value
 
-var total_items = 3;
+
 
 function CalculateSDessertValue() {
 
-    var total = 0;
+    let total = 0;
 
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 7; i <= 9; i++) {
         itemID = document.getElementById("qnt_" + i);
         total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")))
 
     }
-    document.getElementById('DesertTotal').innerHTML = "€" + total.toFixed(2);
+    document.getElementById('DessertTotal').innerHTML = "€" + total.toFixed(2);
    
 }
 
@@ -119,13 +119,13 @@ document.querySelectorAll('[id^="qnt_7"], [id^="qnt_8"], [id^="qnt_9"]').forEach
 
 //Drinks value
 
-var total_items = 3;
+
 
 function CalculateSDrinkValue() {
 
-    var total = 0;
+    let total = 0;
 
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 10; i <= 12; i++) {
         itemID = document.getElementById("qnt_" + i);
         total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")))
 
@@ -138,6 +138,48 @@ document.querySelectorAll('[id^="qnt_10"], [id^="qnt_11"], [id^="qnt_12"]').forE
     item.addEventListener('keyup', CalculateSDrinkValue);
 });
 
+//Vegetarian 
+
+
+function CalculateSVegetarianValue() {
+
+    let total = 0;
+
+    for (let i = 2; i <= 5; i++) {
+        itemID = document.getElementById("qnt_" + i);
+        total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")))
+
+    }
+    document.getElementById('VegetarianTotal').innerHTML = "€" + total.toFixed(2);
+   
+}
+
+document.querySelectorAll('[id^="qnt_2"], [id^="qnt_5"]').forEach(item => {
+    item.addEventListener('keyup', CalculateSVegetarianValue);
+});
+
+//Non Vegetarian 
+
+
+function CalculateSNonVegetarianValue() {
+
+    let total = 0;
+
+    for (let i = 1; i <= 4; i++) {
+        itemID = document.getElementById("qnt_" + i);
+        total = total + (parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price")))
+
+    }
+    document.getElementById('nonVegetarianTotal').innerHTML = "€" + total.toFixed(2);
+   
+}
+
+document.querySelectorAll('[id^="qnt_1"], [id^="qnt_3"], [id^="qnt_4"]').forEach(item => {
+    item.addEventListener('keyup', CalculateSNonVegetarianValue);
+});
+
+
+
 
 // Total calculator
 
@@ -145,7 +187,7 @@ document.querySelectorAll('[id^="qnt_10"], [id^="qnt_11"], [id^="qnt_12"]').forE
 
     function CalculateItemsValue() {
 
-        var total = 0;
+        let total = 0;
 
         for (let i = 1; i <= total_items; i++) {
             itemID = document.getElementById("qnt_" + i);

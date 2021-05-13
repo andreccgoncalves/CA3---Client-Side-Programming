@@ -129,3 +129,10 @@ output{
   background-repeat: no-repeat;
   
 }
+
+input[type="checkbox"]
+{
+  display: inline-block;
+  vertical-align: middle;
+}
+

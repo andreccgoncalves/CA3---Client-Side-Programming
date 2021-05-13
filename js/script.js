@@ -13,6 +13,7 @@ function validate() {
         alert('Invalid Staff Number');
     
     }
+}
 
 
 
@@ -201,4 +202,4 @@ document.querySelectorAll('[id^="qnt_1"], [id^="qnt_3"], [id^="qnt_4"]').forEach
     document.querySelectorAll('[id^="qnt_"]').forEach(item => {
         item.addEventListener('keyup', CalculateItemsValue);
     });
-}
+

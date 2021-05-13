@@ -5,24 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page2</title>
-  
+    <script src="https://unpkg.com/vue"></script>
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="js/script.js"></script>
 </head>
+
+<ul class="my_class">
+  <li><a href="index.html" a class="active">Home</a></li>
+  <li><a href="page2.html">Page 2</a></li>
+  <li style="color: black; padding: 1%; text-decoration: underline; text-align:center;">Welcome to CA3 Restaurant</li>
+</ul> <br>
 <body>
-    <style>
-        body {
-          background-image: url('img/background.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed; 
-          background-size: 100% 100%;
-        }
-        </style>
+
+  <h1>
+    Vue Examples: </h1></br>
 
 
+<div id="app-2">
+  <span v-bind:title="message">
+      Hover your mouse over me for a few seconds
+      to see my dynamically bound title!
+  </span>
+</div>
+
+<script>
+  var app2 = new Vue({
+      el: '#app-2',
+      data: {
+          message: 'You loaded this page on ' + new Date().toLocaleString()
+      }
+  })
+</script>
+<div id="app">
+  {{ message }}
+</div>
+
+
+
+<script>
+  var app = new Vue({
+      el: '#app',
+      data: {
+          message: 'Welcome to C3 Restaurant, we are very happy for having you here with us tonight!!'
+      }
+  })
+</script>
         
 
-        
+        <!--Footer-->
+
+  <div class="footer fixed pt-sm-2 pt-md-4 pt-lg-5">
+    <div style="height: inherit;" class="row bg-dark mx-auto">
+      <div class="col-lg-10 col-md-8 col-sm-9 footer-txt">
+          <p class="mt-sm-1  mt-lg-4">Created by <span class="text-white">Andre Goncalves</span> 2020195<i
+              class="ml-3 text-secondary fab fa-facebook"></i><i class="ml-1 text-secondary fab fa-github"></i></p>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

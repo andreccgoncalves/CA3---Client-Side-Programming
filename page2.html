@@ -5,40 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>page2</title>
+    <title>page 2</title>
+    <!--MY JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--MY CSS-->
     <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
     <script>
         $(document).ready(function () {
             $("button").click(function () {
 
                 $("#div1").fadeToggle('');
                 $("#div2").fadeToggle("slow");
-                $("#div3").fadeToggle(3000);
+                $("#div3").fadeToggle(2000);
 
                 $("#div4").fadeToggle();
                 $("#div5").fadeToggle("slow");
-                $("#div6").fadeToggle(3000);
+                $("#div6").fadeToggle(2000);
 
                 $("#div7").fadeToggle();
                 $("#div8").fadeToggle("slow");
-                $("#div9").fadeToggle(3000);
+                $("#div9").fadeToggle(2000);
 
                 $("#div10").fadeToggle();
                 $("#div11").fadeToggle("slow");
-                $("#div12").fadeToggle(3000);
+                $("#div12").fadeToggle(2000);
+
+
             });
         });
     </script>
 </head>
+<!--Header-->
 <ul class="my_class">
     <li><a href="index.html">Home</a></li>
     <li><a href="fade.html" a class="active">Page 2</a></li>
+    <li><a href="https://github.com/andreccgoncalves/CA3---Client-Side-Programming">Github Repository</a></li>
     <li style="color: black; padding: 1%; text-decoration: underline; text-align:center;">Welcome to CA3 Restaurant</li>
 </ul> <br><br>
 
 <body>
+    <!--Fade in/out JQuery tool-->
+    <!--Reference: https://www.w3schools.com/jquery/jquery_fade.asp-->
 
     <button class="showUsers" id="btn0">Click to fade in/out some flags</button>
     <table style="text-align: center; margin-left: auto; margin-right: auto">
@@ -46,6 +56,7 @@
         <tr class="tr1">
             <td class="table" id="table1"><br>
                 France<br><br>
+                <!--French flag-->
             <td div id="div1" style="width:80px;height:80px;display:none;background-color:#0055A4;">
                 </div><br></td>
             <td div id="div2" style="width:80px;height:80px;display:none;background-color:#FFFFFF;">
@@ -55,7 +66,7 @@
             <br><br>
             </td>
         </tr>
-
+        <!--Irish flag-->
         <tr class="tr2">
             <td class="table" id="table2"><br>
                 Ireland<br><br>
@@ -68,7 +79,7 @@
             <br><br>
             </td>
         </tr>
-
+        <!--Italian flag-->
         <tr class="tr3">
             <td class="table" id="table3"><br>
                 Italy<br><br>
@@ -81,7 +92,7 @@
             <br><br>
             </td>
         </tr>
-
+        <!--German flag-->
         <tr class="tr4">
             <td class="table" id="table4"><br>
                 Germany<br><br>
@@ -98,7 +109,7 @@
     </table>
 
 
-
+    <!--Customer Survey-->
 
     <br><br><textarea name="" cols="40" rows="3"
         style="font-size:80%;">What kind of typical food from these countries would you like to try here in our restaurant?</textarea><br>
@@ -121,6 +132,9 @@
                 <p class="mt-sm-1  mt-lg-4">Created by <span class="text-white">Andre Goncalves</span> 2020195<i
                         class="ml-3 text-secondary fab fa-facebook"></i><i
                         class="ml-1 text-secondary fab fa-github"></i></p>
+                <p style="text-align: center;" class="link"><a
+                        href="https://github.com/andreccgoncalves/CA3---Client-Side-Programming">Github Repository</a>
+                </p>
                 </ul>
             </div>
         </div>

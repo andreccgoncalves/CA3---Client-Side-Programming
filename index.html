@@ -7,260 +7,265 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
 
+  <!--MY CSS-->
   <link rel="stylesheet" href="css/style.css">
 
-
-
-
 </head>
+
+<!--Header-->
 <ul class="my_class">
   <li><a href="index.html" a class="active">Home</a></li>
   <li><a href="fade.html">Page 2</a></li>
+  <li><a href="https://github.com/andreccgoncalves/CA3---Client-Side-Programming">Github Repository</a></li>
   <li style="color: black; padding: 1%; text-decoration: underline; text-align:center;">Welcome to CA3 Restaurant</li>
 </ul> <br>
 
 <body>
 
+  <!--Staff Password Validator input-->
+  <label for="StaffID" id="lblStaff">Staff Password Validator</label>
+  <input type="text" id="StaffID" placeholder="Staff ID"><br>
 
-    <label for="StaffID" id="lblStaff">Staff Password Validator</label>
-    <input type="text" id="StaffID" placeholder="Staff ID"><br>
+  <!--Rules for the password (REGEX)-->
+  <p>The password must have at least one lowercase letter.</br>
+    The password must have at least one uppercase letter.</br>
+    It must contain (at least) one digit and (at least) one special character.</br>
+    And it must be at least eight characters long.</p>
 
-    <p>The password must have at least one lowercase letter.</br>
-      The password must have at least one uppercase letter.</br>
-      It must contain (at least) one digit and (at least) one special character.</br>
-      And it must be at least eight characters long.</p>
-
-    <button onclick="validate()" class="checkPwd" type="button" id="getText">CHECK PASSWORD</button> <br>
- 
-
-
-      <hr>
-    
-        <button onclick="getRandom()" class="showUsers" type="button" id="getRandom">CUSTOMERS</button> <br>
-
-   
-
-
-      <div id="output"></div>
-
-  
-    
-    <h1>Menu Options</h1>
-    <table class="center">
-      <tr>
-        <th scope="col">Starters</th>
-        <th scope="col">Quantity</th>
-        <th scope="col">Price</th>
-      </tr>
-      <tr>
-
-        <td>Chicken Wings</td>
-        <td>
-          <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="5">
-        </td>
-        <td>€5</td>
-
-      </tr>
-      <tr>
-
-        <td>Broccoli (vegetarian)</td>
-        <td>
-          <input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="5">
-        </td>
-        <td>€5</td>
-
-      </tr>
-      <tr>
-
-        <td>Beef Strips</td>
-        <td>
-          <input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="5">
-        </td>
-        <td>€5</td>
-
-      </tr>
-      <tr>
-
-        <th scope="col">Main Courses</th>
-
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-
-        <td>Sweet & Sour Salmon</td>
-        <td>
-          <input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="15">
-        </td>
-        <td>€15</td>
-
-      </tr>
-      <tr>
-
-        <td>Spinach & ricotta gnocchi (vegetarian)</td>
-        <td>
-          <input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="15">
-        </td>
-        <td>€15</td>
-
-      </tr>
-      <tr>
-
-        <td>Sirloin Steak with garlic butter</td>
-        <td>
-          <input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="15">
-        </td>
-        <td>€15</td>
-
-      </tr>
-    
-
-      <tr>
-
-        <th scope="col">Desserts</th>
-
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-
-        <td>Mango and coconut soufflé</td>
-        <td>
-          <input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="8">
-        </td>
-        <td>€8</td>
-
-      </tr>
-      <tr>
-
-        <td>Chocolate, peanut butter & avocado pudding</td>
-        <td>
-          <input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="8">
-        </td>
-        <td>€8</td>
-
-      </tr>
-      <tr>
-
-        <td>Praline and ganache cake</td>
-        <td>
-          <input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="8">
-        </td>
-        <td>€8</td>
-
-      </tr>
-      <tr>
-
-        <th scope="col">Drinks</th>
-
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-
-        <td>Coca-Cola</td>
-        <td>
-          <input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="4">
-        </td>
-        <td>€4</td>
-
-      </tr>
-      <tr>
-
-        <td>Sprite</td>
-        <td>
-          <input name="qnt_11" type="text" id="qnt_11" value="0" size="3" data-price="3">
-        </td>
-        <td>€3</td>
-
-      </tr>
-      <tr>
-
-        <td>Wine (Glass merlot)</td>
-        <td>
-          <input name="qnt_12" type="text" id="qnt_12" value="0" size="3" data-price="8">
-        </td>
-        <td>€8</td>
-
-      </tr>
-      <tr>
-
-        <td class="total">&nbsp;</td>
-        <td class="total right"><strong>Total bill:</strong></td>
-        <td class="total"><strong>
-            <div id="ItemsTotal">€0</div>
-          </strong></td>
-
-      </tr>
-      <tr>
-
-        <td class="Starters">&nbsp;</td>
-        <td class="Starters right"><strong>Starters:</strong></td>
-        <td class="Starters"><strong>
-            <div id="StartersTotal">€0</div>
-          </strong></td>
-
-      </tr>
-      <tr>
-
-        <td class="Main">&nbsp;</td>
-        <td class="Main right"><strong>Main:</strong></td>
-        <td class="main"><strong>
-            <div id="MainTotal">€0</div>
-          </strong></td>
-
-      </tr>
-      <tr>
-
-        <td class="dessert">&nbsp;</td>
-        <td class="dessert right"><strong>Dessert:</strong></td>
-        <td class="dessert"><strong>
-            <div id="DessertTotal">€0</div>
-          </strong></td>
-
-      </tr>
-      <tr>
-
-        <td class="drinks">&nbsp;</td>
-        <td class="drinks right"><strong>Drinks:</strong></td>
-        <td class="drinks"><strong>
-            <div id="DrinksTotal">€0</div>
-          </strong></td>
-
-      </tr>
-      <tr>
-
-        <td class="vegetarian">&nbsp;</td>
-        <td class="vegetarian right"><strong>Vegetarian cost:</strong></td>
-        <td class="vegetarian"><strong>
-            <div id="VegetarianTotal">€0</div>
-          </strong></td>
-
-      </tr>
-      <tr>
-
-        <td class="nonVegetarian">&nbsp;</td>
-        <td class="nonVegetarian right"><strong>Non-vegetarian cost:</strong></td>
-        <td class="nonVegetarian"><strong>
-            <div id="nonVegetarianTotal">€0</div>
-          </strong></td>
-
-      </tr>
-
-  
-    </table>
+  <!--Button that checks password-->
+  <button onclick="validate()" class="checkPwd" type="button" id="getText">CHECK PASSWORD</button> <br>
 
 
 
+  <hr>
+  <!--Button that generates the users-->
+  <button onclick="getRandom()" class="showUsers" type="button" id="getRandom">CUSTOMERS</button> <br>
 
+
+
+  <!--Output for the users-->
+  <div id="output"></div>
+
+
+  <!--Menu options as table-->
+  <!--Each item has its name, id and price (also size of the input box for the number of item)-->
+
+  <h1>Menu Options</h1>
+  <table class="center">
+    <tr>
+      <th scope="col">Starters</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+    </tr>
+    <tr>
+
+      <td>Chicken Wings</td>
+      <td>
+        <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="5">
+      </td>
+      <td>€5</td>
+
+    </tr>
+    <tr>
+
+      <td>Broccoli (vegetarian)</td>
+      <td>
+        <input name="qnt_2" type="text" id="qnt_2" value="0" size="3" data-price="5">
+      </td>
+      <td>€5</td>
+
+    </tr>
+    <tr>
+
+      <td>Beef Strips</td>
+      <td>
+        <input name="qnt_3" type="text" id="qnt_3" value="0" size="3" data-price="5">
+      </td>
+      <td>€5</td>
+
+    </tr>
+    <tr>
+
+      <th scope="col">Main Courses</th>
+
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+
+      <td>Sweet & Sour Salmon</td>
+      <td>
+        <input name="qnt_4" type="text" id="qnt_4" value="0" size="3" data-price="15">
+      </td>
+      <td>€15</td>
+
+    </tr>
+    <tr>
+
+      <td>Spinach & ricotta gnocchi (vegetarian)</td>
+      <td>
+        <input name="qnt_5" type="text" id="qnt_5" value="0" size="3" data-price="15">
+      </td>
+      <td>€15</td>
+
+    </tr>
+    <tr>
+
+      <td>Sirloin Steak with garlic butter</td>
+      <td>
+        <input name="qnt_6" type="text" id="qnt_6" value="0" size="3" data-price="15">
+      </td>
+      <td>€15</td>
+
+    </tr>
+
+
+    <tr>
+
+      <th scope="col">Desserts</th>
+
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+
+      <td>Mango and coconut soufflé</td>
+      <td>
+        <input name="qnt_7" type="text" id="qnt_7" value="0" size="3" data-price="8">
+      </td>
+      <td>€8</td>
+
+    </tr>
+    <tr>
+
+      <td>Chocolate, peanut butter & avocado pudding</td>
+      <td>
+        <input name="qnt_8" type="text" id="qnt_8" value="0" size="3" data-price="8">
+      </td>
+      <td>€8</td>
+
+    </tr>
+    <tr>
+
+      <td>Praline and ganache cake</td>
+      <td>
+        <input name="qnt_9" type="text" id="qnt_9" value="0" size="3" data-price="8">
+      </td>
+      <td>€8</td>
+
+    </tr>
+    <tr>
+
+      <th scope="col">Drinks</th>
+
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+
+      <td>Coca-Cola</td>
+      <td>
+        <input name="qnt_10" type="text" id="qnt_10" value="0" size="3" data-price="4">
+      </td>
+      <td>€4</td>
+
+    </tr>
+    <tr>
+
+      <td>Sprite</td>
+      <td>
+        <input name="qnt_11" type="text" id="qnt_11" value="0" size="3" data-price="3">
+      </td>
+      <td>€3</td>
+
+    </tr>
+    <tr>
+
+      <td>Wine (Glass merlot)</td>
+      <td>
+        <input name="qnt_12" type="text" id="qnt_12" value="0" size="3" data-price="8">
+      </td>
+      <td>€8</td>
+
+    </tr>
+
+    <!--Here it's done a summary of the bill (each of the costs subdivided by starters, main, dessert and drinks)-->
+    <tr>
+
+      <td class="total">&nbsp;</td>
+      <td class="total right"><strong>Total bill:</strong></td>
+      <td class="total"><strong>
+          <div id="ItemsTotal">€0</div>
+        </strong></td>
+
+    </tr>
+    <tr>
+
+      <td class="Starters">&nbsp;</td>
+      <td class="Starters right"><strong>Starters:</strong></td>
+      <td class="Starters"><strong>
+          <div id="StartersTotal">€0</div>
+        </strong></td>
+
+    </tr>
+    <tr>
+
+      <td class="Main">&nbsp;</td>
+      <td class="Main right"><strong>Main:</strong></td>
+      <td class="main"><strong>
+          <div id="MainTotal">€0</div>
+        </strong></td>
+
+    </tr>
+    <tr>
+
+      <td class="dessert">&nbsp;</td>
+      <td class="dessert right"><strong>Dessert:</strong></td>
+      <td class="dessert"><strong>
+          <div id="DessertTotal">€0</div>
+        </strong></td>
+
+    </tr>
+    <tr>
+
+      <td class="drinks">&nbsp;</td>
+      <td class="drinks right"><strong>Drinks:</strong></td>
+      <td class="drinks"><strong>
+          <div id="DrinksTotal">€0</div>
+        </strong></td>
+
+    </tr>
+    <tr>
+
+      <td class="vegetarian">&nbsp;</td>
+      <td class="vegetarian right"><strong>Vegetarian cost:</strong></td>
+      <td class="vegetarian"><strong>
+          <div id="VegetarianTotal">€0</div>
+        </strong></td>
+
+    </tr>
+    <tr>
+
+      <td class="nonVegetarian">&nbsp;</td>
+      <td class="nonVegetarian right"><strong>Non-vegetarian cost:</strong></td>
+      <td class="nonVegetarian"><strong>
+          <div id="nonVegetarianTotal">€0</div>
+        </strong></td>
+
+    </tr>
+
+
+  </table>
 
   <!--Footer-->
 
   <div class="footer fixed pt-sm-2 pt-md-4 pt-lg-5">
     <div style="height: inherit;" class="row bg-dark mx-auto">
       <div class="col-lg-10 col-md-8 col-sm-9 footer-txt">
-          <p class="mt-sm-1  mt-lg-4">Created by <span class="text-white">Andre Goncalves</span> 2020195<i
-              class="ml-3 text-secondary fab fa-facebook"></i><i class="ml-1 text-secondary fab fa-github"></i></p>
+        <p class="mt-sm-1  mt-lg-4">Created by <span class="text-white">Andre Goncalves</span> 2020195<i
+            class="ml-1 text-secondary fab fa-github"></i></p>
+        <p style="text-align: center;" class="link"><a
+            href="https://github.com/andreccgoncalves/CA3---Client-Side-Programming">Github Repository</a></p>
         </ul>
       </div>
     </div>

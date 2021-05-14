@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 2</title>
+    <!--MY JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--MY CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JS-->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+
+                $("#div1").fadeToggle('');
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(2000);
+
+                $("#div4").fadeToggle();
+                $("#div5").fadeToggle("slow");
+                $("#div6").fadeToggle(2000);
+
+                $("#div7").fadeToggle();
+                $("#div8").fadeToggle("slow");
+                $("#div9").fadeToggle(2000);
+
+                $("#div10").fadeToggle();
+                $("#div11").fadeToggle("slow");
+                $("#div12").fadeToggle(2000);
+
+
+            });
+        });
+    </script>
+</head>
+<!--Header-->
+<ul class="my_class">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="fade.html" a class="active">Page 2</a></li>
+    <li><a href="https://github.com/andreccgoncalves/CA3---Client-Side-Programming">Github Repository</a></li>
+    <li style="color: black; padding: 1%; text-decoration: underline; text-align:center;">Welcome to CA3 Restaurant</li>
+</ul> <br><br>
+
+<body>
+    <!--Fade in/out JQuery tool-->
+    <!--Reference: https://www.w3schools.com/jquery/jquery_fade.asp-->
+
+    <button class="showUsers" id="btn0">Click to fade in/out some flags</button>
+    <table style="text-align: center; margin-left: auto; margin-right: auto">
+
+        <tr class="tr1">
+            <td class="table" id="table1"><br>
+                France<br><br>
+                <!--French flag-->
+            <td div id="div1" style="width:80px;height:80px;display:none;background-color:#0055A4;">
+                </div><br></td>
+            <td div id="div2" style="width:80px;height:80px;display:none;background-color:#FFFFFF;">
+                </div><br></td>
+            <td div id="div3" style="width:80px;height:80px;display:none;background-color:#EF4135;">
+                </div><br></td>
+            <br><br>
+            </td>
+        </tr>
+        <!--Irish flag-->
+        <tr class="tr2">
+            <td class="table" id="table2"><br>
+                Ireland<br><br>
+            <td div id="div4" style="width:80px;height:80px;display:none;background-color:#169B62;">
+                </div><br></td>
+            <td div id="div5" style="width:80px;height:80px;display:none;background-color:#FFFFFF;">
+                </div><br></td>
+            <td div id="div6" style="width:80px;height:80px;display:none;background-color:#FF883E;">
+                </div><br></td>
+            <br><br>
+            </td>
+        </tr>
+        <!--Italian flag-->
+        <tr class="tr3">
+            <td class="table" id="table3"><br>
+                Italy<br><br>
+            <td div id="div7" style="width:80px;height:80px;display:none;background-color:#008c45;">
+                </div><br></td>
+            <td div id="div8" style="width:80px;height:80px;display:none;background-color:#FFFFFF;">
+                </div><br></td>
+            <td div id="div9" style="width:80px;height:80px;display:none;background-color:#cd212a;">
+                </div><br></td>
+            <br><br>
+            </td>
+        </tr>
+        <!--German flag-->
+        <tr class="tr4">
+            <td class="table" id="table4"><br>
+                Germany<br><br>
+            <td div id="div10" style="width:80px;height:80px;display:none;background-color:#000000;">
+                </div><br></td>
+            <td div id="div11" style="width:80px;height:80px;display:none;background-color:#ff0000;">
+                </div><br></td>
+            <td div id="div12" style="width:80px;height:80px;display:none;background-color:#ffcc00;">
+                </div><br></td>
+            <br><br>
+
+            </td>
+        </tr>
+    </table>
+
+
+    <!--Customer Survey-->
+
+    <br><br><textarea name="" cols="40" rows="3"
+        style="font-size:80%;">What kind of typical food from these countries would you like to try here in our restaurant?</textarea><br>
+    <input type="checkbox" style="display: inline-block; padding-right: 10px; white-space: nowrap;"
+        id='item0'><span>France</span><br>
+    <input type="checkbox" style="display: inline-block; padding-right: 10px; white-space: nowrap;"
+        id='item1'><span>Ireland</span><br>
+    <input type="checkbox" style="display: inline-block; padding-right: 10px; white-space: nowrap;"
+        id='item2'><span>Italy</span><br>
+    <input type="checkbox" style="display: inline-block; padding-right: 10px; white-space: nowrap;"
+        id='item3'><span>Germany</span><br>
+    <button id="btn1">Send</button><br> <br>
+    <textarea name="" cols="30" rows="1" style="font-size:80%;"> Thanks for visiting us today!! Stay safe</textarea>
+
+    <!--Footer-->
+
+    <div class="footer fixed pt-sm-2 pt-md-4 pt-lg-5">
+        <div style="height: inherit;" class="row bg-dark mx-auto">
+            <div class="col-lg-10 col-md-8 col-sm-9 footer-txt">
+                <p class="mt-sm-1  mt-lg-4">Created by <span class="text-white">Andre Goncalves</span> 2020195<i
+                        class="ml-3 text-secondary fab fa-facebook"></i><i
+                        class="ml-1 text-secondary fab fa-github"></i></p>
+                <p style="text-align: center;" class="link"><a
+                        href="https://github.com/andreccgoncalves/CA3---Client-Side-Programming">Github Repository</a>
+                </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

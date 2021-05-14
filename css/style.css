@@ -1,10 +1,11 @@
+/* Unordered list  */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
+/* Header's Unordered list styling */
 ul.my_class {
   list-style-type: none;
   margin: 0;
@@ -15,17 +16,7 @@ ul.my_class {
 
  
 }
-
-li {
- 
-  background-repeat: no-repeat;
-  color: white;
-
-}
-
-li a {
-  float: left;
-}
+/* Header's Unordered list styling */
 
 li a {
   display: block;
@@ -34,6 +25,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   background-color: #e4b63a;
+  float: left;
 
 }
 
@@ -44,42 +36,43 @@ li a:hover {
 .active {
   background-color: #111;
 }
-
+/* Boxes' styling */
 .boxed {
   border: 1px solid #e4b63a ;
   text-align: center;
 }
-
+/* Staff Password Validator styling */
 label{
   font-weight: bold;
 
 }
-
+/* Table's styling */
 table, th, td {
   border: 1px dotted #e4b63a;
-  
-
 }
-
+/* Table's styling */
 th, td {
   padding: 5px;
   height: 50px;
 }
-
+/* Table's styling */
 table {
   width: 400px;
  
   
 }
-
+/* Menu options' styling */
 .center {
   margin-left: auto;
   margin-right: auto;
 }
+/* Header's 1 styling */
 h1{
   text-align: center;
   font-size: large;
 }
+
+/* Body's styling */
 body{
   text-align: center;
   background-image: url("/img/background1.jpg");
@@ -88,48 +81,36 @@ body{
   font-family: 'Times New Roman', Times, serif;
 
 }
-
+/* Show User button's styling */
 .showUsers {
-  background-color: #e4b63a; 
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
+  background-color: #e4b63a;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  
+  border: none;
+  padding: 10px;
+  margin: 10px 75px;
+  border-radius: 5px;
 }
-
+/* Checking Password button's styling */
 .checkPwd {
-  background-color: #e4b63a; 
-  border: none;
-  color: rgb(0, 0, 0);;
-  padding: 10px 25px;
+  background-color: #e4b63a;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  border: none;
+  padding: 10px;
+  margin: 10px 75px;
+  border-radius: 5px;
 }
 
-
-container-headertext1{
-  background-color: #111;
-}
-
-output{
-  text-align: center;
-  background-image: url("/img/background1.jpg");
-  border: 2px dashed #333;
-  color: #111;
-  background-repeat: no-repeat;
-  
-}
-
+/* Input checkbox's styling */
 input[type="checkbox"]
 {
   display: inline-block;

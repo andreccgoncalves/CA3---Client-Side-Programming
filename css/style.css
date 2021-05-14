@@ -16,6 +16,15 @@ ul.my_class {
 
  
 }
+
+/*styling and positioning the submit button*/
+input[type=submit] {
+  background-color: #e4b63a;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 /* Header's Unordered list styling */
 
 li a {
@@ -117,3 +126,15 @@ input[type="checkbox"]
   vertical-align: middle;
 }
 
+
+/*styling and positioning the menu */
+.menu {
+  background: #000000;
+  opacity: 0.6;
+  width: 100%;
+  max-width: 700px;
+  height: fit-content;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.788);
+}
